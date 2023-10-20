@@ -19,7 +19,7 @@ const getResult = () => {
   if (operatorentered && second.innerHTML.length) {
     const finalValue = eval(
       `${valueInputContainer.innerHTML}${operators.innerHTML}${second.innerHTML}`,
-    ).toFixed(2);
+    );
     resultContainer.innerHTML = finalValue ? finalValue : "";
   }
 };
