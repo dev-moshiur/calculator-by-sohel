@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div onclick="modeToggle()" class="mode">
+        <span>day</span>
+        <span>night</span>
+        <div  id="mode" class="switch"></div>
+    </div>
+    <div class="container">
+      <div class="display">
+        <div class="topscreen">
+          <div id="valueInputContainer" class="values"></div>
+          <div id="operators" class="operators"></div>
+          <div id="second" class="second"></div>
+        </div>
+        <div class="bottom"></div>
+        <div class="gap"></div>
+        <div id="resultContainer" class="result"></div>
+      </div>
+      <div class="buttons">
+        <div class="left">
+          <div class="top">
+            <span onclick="slicing()">x</span>
+            <span onclick="cleared()">c</span>
+            <span onclick="valueInput('0')">0</span>
+          </div>
+          <div id="numbers" class="bottom"></div>
+        </div>
+        <div class="right">
+          <span onclick="addPerator('*')">*</span>
+          <span onclick="addPerator('/')">/</span>
+          <span onclick="addPerator('-')">-</span>
+          <span onclick="addPerator('+')">+</span>
+        </div>
+      </div>
+    </div>
+    <div class="developer">
+        <h2>Developer Information</h2>
+      <div> <div class="label">Name </div><span>:</span><div class="value">Md Sohel Rana  </div>
+       </div> <div><div class="label">Address </div><span>:</span><div class="value">Nijpara kacharipara , Birganj ,Dinajpur</div>
+      </div>  <div><div class="label">Image </div><span>:</span><img class="img" src="./sohel.jpg" >
+   </div </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
